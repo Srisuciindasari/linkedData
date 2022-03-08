@@ -1,0 +1,7 @@
+%%rdf turtle
+@prefix rdfs:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>. 
+@prefix ex:<https://github.com/Srisuciindasari/linkedData/>.
+@prefix aiiso:<http://purl.org/vocab/aiiso/schema#>.
+@prefix dbo:<http://dbpedia.org/ontology/>.
