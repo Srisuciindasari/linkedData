@@ -1,0 +1,50 @@
+%%rdf turtle
+@prefix rdfs:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>. 
+@prefix ex:<https://github.com/Srisuciindasari/linkedData/>.
+@prefix aiiso:<http://purl.org/vocab/aiiso/schema#>.
+@prefix dbo:<http://dbpedia.org/ontology/>.
+
+#Class
+ex:SK a rdfs:Class.
+ex:tahunAkhir a rdfs:Class.
+
+# Property
+ex:noSK a rdfs:Property .
+ex:noSK rdfs:domain ex:SK.
+ex:noSK rdfs:range xsd:String .
+
+ex:batasAkhir a rdfs:Property .
+ex:batasAkhir rdfs:domain ex:tahunAkhir.
+ex:batasAkhir rdfs:range xsd:String .
+
+# Instance
+ex:SistemInformasi a aiiso:Department, aiiso:Programme.
+ex:SistemInformasi aiiso:Programme ex:S2.
+ex:SistemInformasi foaf:Status "B".
+ex:SistemInformasi ex:noSK "0323/SK/BAN-PT/Akred/M/I/2017".
+ex:SistemInformasi dbo:Year 2017.
+ex:SistemInformasi xsd:batasAkhir "January 10, 2022".
+
+ex:Statistika a aiiso:Department, aiiso:Programme.
+ex:Statistika aiiso:Programme ex:S1.
+ex:Statistika foaf:Status "A".
+ex:Statistika ex:noSK "7339/SK/BAN-PT/Ak-PPJ/S/XI/2020".
+ex:Statistika dbo:Year 2020.
+ex:Statistika ex:batasAkhir "November 15, 2025".
+
+ex:TeknikSipil a aiiso:Department, aiiso:Programme.
+ex:TeknikSipil aiiso:Programme ex:DIII.
+ex:TeknikSipil foaf:Status "A".
+ex:TeknikSipil ex:noSK "103/SK/BAN-PT/Ak-PPJ/Dipl-III/I/2021".
+ex:TeknikSipil dbo:Year 2021.
+ex:TeknikSipil ex:batasAkhir "December 30, 2025".
+
+
+ex:TeknikLingkungan a aiiso:Department, aiiso:Programme.
+ex:TeknikLingkungan aiiso:Programme ex:S3.
+ex:TeknikLingkungan foaf:Status "A".
+ex:TeknikLingkungan ex:noSK "2948/SK/BAN-PT/Akred/D/VIII/2019".
+ex:TeknikLingkungan dbo:Year 2019.
+ex:TeknikLingkungan ex:batasAkhir "August 7, 2024".
